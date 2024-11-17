@@ -1,0 +1,143 @@
+#gallery {
+    height: 730px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 350px;
+}
+
+.galleryheader span {
+    color: #ea4424;
+}
+
+.galleryheader {
+    margin-bottom: 230px;
+    height: 160px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.galleryheader h1 {
+    margin-bottom: 20px;
+    font-size: 4rem;
+
+}
+
+.galleryheader p {
+
+    font-size: 1.6rem;
+}
+
+.image-container {
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.7s;
+}
+
+.image-container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(750px);
+    transition: all 0.9s ease-in-out;
+}
+
+
+.image-container span img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 8px;
+
+
+
+}
+
+.image-container .galleryImgSpan img {
+    top: 37px;
+}
+
+
+
+.btn-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+    position: absolute;
+    top: 150px;
+    background-color: #162645;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(1.5);
+}
+
+.svg-wrapper {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    background-color: linear-gradient(white, rgb(234, 68, 36));
+    border-radius: 10px;
+    border: 1px solid rgb(234, 68, 36);
+}
+
+.shape {
+    stroke-dasharray: 100 300;
+    stroke-dashoffset: -297;
+    fill: transparent;
+    stroke: rgb(255, 0, 0);
+    stroke-width: 5px;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+
+}
+
+.text {
+    font-size: 22px;
+    top: -52px;
+    position: relative;
+    font-weight: 600;
+    color: white;
+}
+
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+.svg-wrapper:hover {
+    background-color: white;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+
+#gallerySwitchBtn i {
+    font-size: 3.5rem;
+
+}
+
+#prev {
+    left: 20%;
+}
+
+#next {
+    right: 20%;
+}

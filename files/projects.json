@@ -1,0 +1,90 @@
+{
+    "HTMLCSSprojects": [
+        {
+            "id": 1,
+            "name": "Here & now",
+            "picture_link": "images/hereAndNowImg.png",
+            "landing_page": "/pages/hereAndNowProject/hereAndNow.html",
+            "project_description": "Simple form to sign up to a program it can be used to sign up for school, university or collage. "
+        },
+        {
+            "id": 2,
+            "name": "Discover the world",
+            "picture_link": "images/discoverTheWorldImg.png",
+            "landing_page": "/pages/discoverTheWorldProject/discoverTheWorld.html",
+            "project_description": "A feedback form designed for a travel agency website where travelers can share their experiences."
+        },
+        {
+            "id": 3,
+            "name": "Global cities",
+            "picture_link": "images/globalCities.png",
+            "landing_page": "/pages/globalCitiesProject/globalCities.html",
+            "project_description": "Showing big cities in the world with description"
+        },
+        {
+            "id": 4,
+            "name": "Gallery",
+            "picture_link": "images/caseDisplayImg.png",
+            "landing_page": "/pages/caseDisplayProject/caseDisplay.html",
+            "project_description": "A gallery that displays pictures, allowing users to click on them to view larger versions of the pictures in the gallery."
+        },
+        {
+            "id": 5,
+            "name": "Great coffee",
+            "picture_link": "./images/greatCoffeeImg.png",
+            "landing_page": "/pages/greatCoffeeProject/greatCoffee.html",
+            "project_description": "Advertisement for coffee and a sign-up form to receive a coupon for enjoying free coffee"
+        },
+        {
+            "id": 6,
+            "name": "Lead you forward",
+            "picture_link": "images/leadYouForwardImg.png",
+            "landing_page": "/pages/leadYouForwardProject/leadYouForward.html",
+            "project_description": "Simple form to sign up to a program it can be used to sign up for school, university or collage."
+        }
+    ],
+    "Jsprojects": [
+        {
+            "id": 1,
+            "name": "ManageU",
+            "picture_link": "images/manageU.png",
+            "landing_page": "/pages/manageu/manageU.html",
+            "project_description": "Task manager"
+        },
+        {
+            "id": 2,
+            "name": "My account",
+            "picture_link": "images/myAccount.png",
+            "landing_page": "/pages/myaccount/myAccount.html",
+            "project_description": "Acount manager"
+        },
+        {
+            "id": 3,
+            "name": "Weather api",
+            "picture_link": "images/weatherApi.png",
+            "landing_page": "/pages/weather%20api/weatherApi.html",
+            "project_description": "Api that shows weather in cities in the world"
+        },
+        {
+            "id": 4,
+            "name": "Snakes & Ladders",
+            "picture_link": "images/snakesAndLadders.png",
+            "landing_page": "/pages/Snakes%26ladders/snakesAndLadders.html",
+            "project_description": "snakes and ladders game"
+        },
+        {
+            "id": 5,
+            "name": "Calculator",
+            "picture_link": "images/calculator.png",
+            "landing_page": "/pages/Calculator/calculator.html",
+            "project_description": "Basic calculator"
+        },
+        {
+            "id": 6,
+            "name": "Countries api",
+            "picture_link": "images/CountriesApi.png",
+            "landing_page": "/pages/countriesApi/countriesApi.html",
+            "project_description": "Api to search country by capital city"
+        }
+    ]
+}

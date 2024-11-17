@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Heebo", sans-serif;
+    --bgc: rgb(255, 255, 255);
+    --color: white;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bgc);
+    color: var(--color);
+}
+
+
+.page-background-img {
+    width: 100%;
+    height: 590px;
+    background-image: url(../images/leadYouForwardBgi.png);
+    z-index: 1;
+}
+
+.form-position {
+    position: absolute;
+    width: 569px;
+    height: 643px;
+    background-color: #000000ab;
+    top: 215px;
+    right: 430px;
+}
+
+.form-container {
+    margin-left: 40px;
+}
+
+.form-head {
+    margin-bottom: 45px;
+}
+
+.form-head>h1 {
+    margin-top: 75px;
+    margin-left: 35px;
+    margin-bottom: 21px;
+}
+
+.form-head>p {
+    direction: ltr;
+    font-size: 1.3rem;
+    margin-left: 35px;
+    width: 415px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+form>input {
+    width: 418px;
+    height: 50px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    border: 1px solid #D31C75;
+}
+
+form>label {
+    font-weight: bold;
+}
+
+.form-submit {
+    width: 166px;
+    height: 50px;
+    font-size: 1.3rem;
+    background-color: #d31c75;
+    color: var(--color);
+    font-family: var(--font-family);
+    font-weight: bold;
+    padding-left: 0;
+    border: none;
+}
+
+@media (max-width:768px) {
+    .page-background-img {
+        width: 100%;
+        height: 213px;
+        background-image: url(../images/project1ImgResponsive.png);
+        z-index: 1;
+    }
+
+    .form-position {
+        position: absolute;
+        width: 299px;
+        height: 441px;
+        background-color: #000000ab;
+        top: 89px;
+        left: 38px;
+    }
+
+    .form-container {
+        width: 230px;
+        height: 349px;
+        margin-left: 17px;
+    }
+
+    .form-head {
+        margin-bottom: 37px;
+    }
+
+    .form-head>h1 {
+        margin-top: 45px;
+        margin-left: 35px;
+        margin-bottom: 21px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .form-head>p {
+        direction: ltr;
+        font-size: 0.9rem;
+        margin-left: 22px;
+        width: 220px;
+        text-align: center;
+    }
+
+    form {
+        margin-left: 17px;
+    }
+
+    form>label {
+        font-weight: bold;
+        font-size: 0.8rem;
+        padding-bottom: 5px;
+    }
+
+    form>input {
+        width: 230px;
+        height: 28px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        font-size: 0.9rem;
+    }
+
+    .form-submit {
+        width: 76px;
+        height: 33px;
+        font-size: 0.9rem;
+        background-color: #d31c75;
+        color: var(--color);
+        border: none;
+        text-align: center;
+    }
+}

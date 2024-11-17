@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #242738;
+    font-family: "Assistant", sans-serif;
+
+}
+
+
+header>h1 {
+    font-size: 10rem;
+    color: #242738;
+    position: relative;
+    -webkit-text-stroke: 0.2vw rgb(255, 255, 255);
+    text-transform: uppercase;
+
+}
+
+header>p {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+header>h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0 white;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: textfill 6s linear infinite;
+}
+
+@keyframes textfill {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 500px;
+    width: 100%;
+}
+
+.pc-display {
+    height: 300px;
+    transition: width 0.6s ease-in-out;
+    width: 70px;
+    border-radius: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #00ffbf;
+
+
+}
+
+#dis1 {
+    background-image: url(../images/firstGamingSetup.jpg);
+    background-size: cover;
+}
+
+#dis2 {
+    background-image: url(../images/secondGamingSetup.jpg);
+    background-size: cover;
+}
+
+#dis3 {
+    background-image: url(../images/thirdGamingSetup.jpg);
+    background-size: cover;
+}
+
+#dis4 {
+    background-image: url(../images/fourthGamingSetup.jpg);
+    background-size: cover;
+}
+
+@media (max-width:768px) {
+    .pc-display {
+        margin-left: 10px;
+        margin-right: 10px;
+        background-position: -45px 0;
+    }
+
+    header {
+        margin-top: 25px;
+    }
+
+    header>h1 {
+        font-size: 5rem;
+    }
+
+    header>p {
+        font-size: 1.5rem;
+    }
+}

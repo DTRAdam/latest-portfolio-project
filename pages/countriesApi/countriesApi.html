@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/countriesApi.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="display-4 mb-3">
+            <span class="manageuspan"> Find the country <i class="fa-solid fa-flag text-primary"></i></span>
+
+        </h1>
+        <div class="inputdiv form-floating mb-3 d-inline-block w-50"><input type="text"
+                class="form-control descriptionInput" id="capitalCity" placeholder="Capital city" maxlength="20" />
+            <label>Capital city</label>
+        </div>
+        <button class="btn position-absolute  mx-3 py-3 btn-outline-light" onclick="findTheContry()">Search</button>
+    </div>
+    <div id="error"></div>
+    <div id="datastyle" class="datastyle">
+        <div id="imgContainer">
+
+        </div>
+        <div id="dataDiv">
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./scripts/countriesApi.js"></script>
+
+</html>

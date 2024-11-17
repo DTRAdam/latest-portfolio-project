@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Heebo;
+}
+
+
+
+.container {
+    display: flex;
+    color: #020253;
+}
+
+.coffee-div {
+    width: 1275px;
+    height: 1271px;
+    background-image: url(../images/Coffee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+
+.form-div {
+    width: 555px;
+    height: 435px;
+    margin-left: 356px;
+    margin-top: 350px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-head {
+    direction: ltr;
+    width: 515px;
+}
+
+.form-head>h1 {
+    font-size: 2.6rem;
+    margin-bottom: 22px;
+}
+
+.form-head>p {
+    font-size: 1.25rem;
+    margin-bottom: 26px;
+}
+
+form input {
+    width: 418px;
+    height: 50px;
+    margin-bottom: 23px;
+    background-color: #E5EEFF;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 4px solid #020253;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.button {
+    width: 166px;
+    font-size: 1.3rem;
+    padding: 0;
+    background-color: #020253;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Heebo;
+
+}
+
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .coffee-div {
+        width: 100vw;
+        height: 29vh;
+        background-image: url(../images/phoneCoffee.png);
+    }
+
+    .coffee-div>img {
+        width: 100vw;
+        height: 29vh;
+    }
+
+    .form-div {
+        width: 91vw;
+        height: 43vh;
+        margin-left: 16px;
+        margin-top: 45px;
+        transform: translateY(0);
+    }
+
+    .form-head {
+        direction: ltr;
+        width: 95vw;
+    }
+
+    .form-head>h1 {
+        font-size: 1.62rem;
+        margin-bottom: 22px;
+    }
+
+    .form-head>p {
+        font-size: 0.9rem;
+        margin-bottom: 26px;
+    }
+
+    form input {
+        width: 91.2vw;
+        height: 4vh;
+        margin-bottom: 23px;
+        background-color: #E5EEFF;
+        font-size: 0.9rem;
+        padding-left: 10px;
+        border: none;
+        border-bottom: 4px solid #020253;
+    }
+
+    form label {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .button {
+        width: 91.1vw;
+        font-size: 1.3rem;
+        padding: 0;
+        background-color: #020253;
+        color: white;
+
+    }
+}

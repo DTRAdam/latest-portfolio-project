@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="./sass/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fcd53155b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#top" class="logo"></a>
+
+            <ul id="ul" onclick="hamburger()">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contactme">Contact</a></li>
+            </ul>
+            <div onclick="hamburger()" class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+    <section class="portfolio">
+        <div class="skills">
+            <img class="biglogo" src="images/newLogo.webp" alt="Logo">
+            <div class="skillsheader">
+                <h1>Hi I'm Adam Kesenjenko</h1>
+                <h3>Full Stack developer</h3>
+                <p>Welcome to my humble portfolio, where I showcase my skills in various
+                    <span id="textspan"></span>
+                </p>
+                <div class="icons">
+                    <img class="smlogo" src="images/html5-brands-solid.svg" alt="html5_logo">
+                    <img class="smlogo" src="images/js-brands-solid.svg" alt="js_logo">
+                    <img class="smlogo" src="images/bootstrap-brands-solid.svg" alt="bootstrap_logo">
+                    <img class="smlogo" src="images/sassLogo.svg" alt="sass_logo">
+                    <img class="smlogo" src="images/bxl-typescript.svg" alt="typescript_logo">
+                    <img class="smlogo" src="images/css3-alt-brands-solid.svg" alt="css_logo">
+                </div>
+
+                <a href="#aboutme">
+                    <button class="learn-more">
+                        <span aria-hidden="true" class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">About me</span>
+                    </button></a>
+            </div>
+        </div>
+
+    </section>
+    <section id="aboutme">
+        <div data-aos="fade-right" data-aos-duration="1650" class="aboutmepostion">
+            <div class="aboutmeheader">
+                <h1>About Me</h1>
+                <h2>Full stack developer</h2>
+            </div>
+            <div class="aboutmepdiv">
+                <img class="aboutmelogo" src="images/me.png" alt="Logo">
+                <div class="secondaboutmediv">
+                    <p>Hi, I’m Adam Kesenjenko, a Full Stack Developmer aiming to create innovative and practical web
+                        solutions. My top priority is to
+                        develop visually appealing
+                        and highly functional websites that offer an excellent user experience. This includes ensuring
+                        ease of navigation and
+                        clarity. My intensive program has provided me with a strong foundation in various web
+                        technologies. <span id="aboutmespan"></span></p>
+
+
+                    <div class="skillsContainer">
+                        <div class="skillCircle">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="number">
+                                        <img class="skillssmlogo" src="/images/html5-brands-solid.svg" alt="html5_logo">
+                                        <p class="skillP" id="skill1">100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#ff6f61" />
+                                        <stop offset="100%" stop-color="#d4a5a5" />
+                                    </linearGradient>
+                                </defs>
+                                <circle id="circle1" cx="80" cy="80" r="70" stroke="url(#GradientColor)"
+                                    stroke-width="10" fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skillCircle">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="number">
+                                        <img class="skillssmlogo" src="/images/bxl-typescript.svg"
+                                            alt="typescript_logo">
+                                        <p class="skillP" id="skill2">75%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#ff6f61" />
+                                        <stop offset="100%" stop-color="#d4a5a5" />
+                                    </linearGradient>
+                                </defs>
+                                <circle id="circle2" cx="80" cy="80" r="70" stroke="url(#GradientColor)"
+                                    stroke-width="10" fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skillCircle">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="number">
+                                        <img class="skillssmlogo" src="/images/bootstrap-brands-solid.svg"
+                                            alt="bootstrap_logo">
+                                        <p class="skillP" id="skill3">80%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#ff6f61" />
+                                        <stop offset="100%" stop-color="#d4a5a5" />
+                                    </linearGradient>
+                                </defs>
+                                <circle id="circle3" cx="80" cy="80" r="70" stroke="url(#GradientColor)"
+                                    stroke-width="10" fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skillCircle">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="number">
+                                        <img class="skillssmlogo" src="/images/sassLogo.svg" alt="sass_logo">
+                                        <p class="skillP" id="skill4">100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#ff6f61" />
+                                        <stop offset="100%" stop-color="#d4a5a5" />
+                                    </linearGradient>
+                                </defs>
+                                <circle id="circle4" cx="80" cy="80" r="70" stroke="url(#GradientColor)"
+                                    stroke-width="10" fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skillCircle">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="number">
+                                        <img class="skillssmlogo" src="/images/js-brands-solid.svg"
+                                            alt="javascript_logo">
+                                        <p class="skillP" id="skill5">80%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#ff6f61" />
+                                        <stop offset="100%" stop-color="#d4a5a5" />
+                                    </linearGradient>
+                                </defs>
+                                <circle id="circle5" cx="80" cy="80" r="70" stroke="url(#GradientColor)"
+                                    stroke-width="10" fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skillCircle">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="number">
+                                        <img class="skillssmlogo" src="/images/css3-alt-brands-solid.svg"
+                                            alt="css_logo">
+                                        <p class="skillP" id="skill6">100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#ff6f61" />
+                                        <stop offset="100%" stop-color="#d4a5a5" />
+                                    </linearGradient>
+                                </defs>
+                                <circle id="circle6" cx="80" cy="80" r="70" stroke="url(#GradientColor)"
+                                    stroke-width="10" fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <div style="display: flex; justify-content: center;align-items: center;">
+                    <a href="/files/newresume.pdf">
+                        <button class="Btn">
+                            <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                </path>
+                            </svg>
+                            <span class="icon2"></span>
+                            <span class="tooltip">Download Qa</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section data-aos="fade-right" data-aos-duration="1650" id="gallery">
+        <div class="galleryheader">
+            <h1>Gallery</h1>
+            <p>My art gallery: You might call me crazy, but I think that my art is better than <span
+                    id="galleryspan"></span></p>
+            <br>
+            <div id="gallerySwitchBtn" onclick="toggleMode()" class="svg-wrapper">
+                <svg height="60" width="190" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="60" width="190"></rect>
+                </svg>
+                <div class="text"></div>
+            </div>
+        </div>
+
+        <div class="image-container" id="image-container">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" id="prev">Prev</button>
+            <button class="btn" id="next">Next</button>
+        </div>
+    </section>
+
+
+    <section data-aos="fade-right" data-aos-duration="1650" id="contactme">
+
+        <div class="contactmehead">
+            <h1>Let's collaborate on a project together.</h1>
+            <div class="imgdiv"></div>
+        </div>
+        <div class="contactmegrid">
+            <main class="contactmemain">
+                <ul class="contactmeul">
+                    <li>
+                        <p id="error"></p>
+                        <label for="name">What is your name?</label>
+                        <input type="text" id="name" required placeholder="Jhon Doe">
+
+                    </li>
+                    <hr>
+                    <li>
+                        <label for="email">What is your email?</label>
+                        <input type="email" id="email" required placeholder="Jhondoe123@gmail.com">
+                    </li>
+                    <hr>
+                    <li>
+                        <label for="company">The name of your business/organization?</label>
+                        <input type="text" id="company" required placeholder="John & Doe ®">
+                    </li>
+                    <hr>
+                    <li>
+                        <label for="services">What services are you looking for?</label>
+                        <input type="text" id="services" required placeholder="Web Design, Web Development ...">
+                    </li>
+                    <hr class="hrtest">
+                    <li>
+                        <label for="textarea">Your message:</label>
+                        <textarea name="textarea" id="textarea"
+                            placeholder="Hello Adam, can you help me with ... "></textarea>
+                    </li>
+                    <button onclick="submitAction()" id="submitBtn" type="submit" class="learn-more form-submit">
+                        <span aria-hidden="true" class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Submit</span>
+                    </button></a>
+                </ul>
+            </main>
+            <aside>
+                <div class="phonenumber">
+                    <h3>Contact Details:</h3>
+                    <hr class="contactdetailshr">
+                    <p>+97254-918-9923</p>
+                    <p>adamDevelopment@gmail.com</p>
+                    <div id="time">
+                        <p></p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Socials</h3>
+                    <hr class="contactdetailshr">
+                    <div class="contactmeicon">
+                        <a href="https://www.instagram.com/dtr__adam/"><button><i
+                                    class="fa-brands fa-instagram "></i></button></a>
+                        <a href="https://www.linkedin.com/in/adam-kesenjenko-49b320313/"><button><i
+                                    class="fa-brands fa-linkedin-in "></i></button></a>
+                        <a href="https://github.com/DTRAdam"><button><i class="fa-brands fa-github"></i></button></a>
+                        <a href="https://web.whatsapp.com/"><button><i class="fa-brands fa-whatsapp "></i></button></a>
+                        <a href=""><button><i class="fa-brands fa-x-twitter "></i></button></a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </section>
+
+</body>
+<script src="./scripts/gallery.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script defer src="./scripts/skillsCircle.js"></script>
+<script src="./scripts/textAnimation.js"></script>
+
+</html>

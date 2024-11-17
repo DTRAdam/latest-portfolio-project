@@ -1,0 +1,172 @@
+#contactme {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactmeul {
+    display: block;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin-bottom: 5px;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+
+}
+
+
+label {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+::placeholder {
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+textarea {
+    resize: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid rgba(255, 251, 251, 0.195);
+}
+
+aside {
+    margin-left: 500px;
+}
+
+.contactdetailshr {
+    border: none;
+    border-top: 2px solid #ea4424;
+}
+
+.contactmehead {
+    display: inline-flex;
+}
+
+.contactmehead h1 {
+    font-size: 4rem;
+    padding-top: 26px;
+}
+
+.imgdiv {
+    margin-bottom: 50px;
+    margin-left: 25px;
+    background-image: url(../images/me.png);
+    width: 145px;
+    height: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    background-position: -2px -13px;
+}
+
+.contactmegrid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+
+
+}
+
+aside p {
+    text-decoration: none;
+    text-underline-offset: 0;
+}
+
+.phonenumber {
+    margin-bottom: 15px;
+}
+
+.contactmeicon {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.contactmeicon i {
+    font-size: 1.9rem;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactmeicon i:hover {
+    font-size: 3rem;
+}
+
+.contactmeicon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.phonenumber p {
+    padding-top: 6px;
+}
+
+#time {
+    margin-top: 8px;
+}
+
+.timespan {
+    font-weight: bold;
+}
+
+input:focus {
+    border-radius: 5px;
+}
+
+textarea:focus {
+    border-radius: 5px;
+}
+
+.phonenumber {
+    font-size: 1.2rem;
+}
+
+.form-submit {
+    margin-top: 15px;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
